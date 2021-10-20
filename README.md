@@ -18,6 +18,7 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 
 ## ต้องมีความรู้พื้นฐาน
 - Line Notify , Line Notify Message API
+link https://notify-bot.line.me/doc/en/
 - Delphi
 - Internet , API
 
