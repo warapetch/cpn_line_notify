@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/06/15 10:26:00.000.847,=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/06/21 10:32:38.000.226,=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/03 09:51:49.000.177,=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/09/03 09:52:45.000.232,=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2020/09/03 09:52:49.000.437,=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\ServerConst1.pas</Transaction>
+    <Transaction>2020/09/03 09:55:40.000.113,=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2020/09/03 09:55:40.000.335,=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2020/09/03 09:57:43.000.860,D:\components\WARAPETCH-XE10.3\line\demo notify mtd\FormUnit1.pas=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2020/09/03 09:57:43.000.860,D:\components\WARAPETCH-XE10.3\line\demo notify mtd\FormUnit1.fmx=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\FormUnit1.fmx</Transaction>
+    <Transaction>2020/09/03 09:57:46.000.110,D:\components\WARAPETCH-XE10.3\line\demo notify mtd\WebModuleUnit1.pas=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2020/09/03 09:57:46.000.110,D:\components\WARAPETCH-XE10.3\line\demo notify mtd\WebModuleUnit1.dfm=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.dfm</Transaction>
+    <Transaction>2020/09/03 09:57:47.000.531,D:\components\WARAPETCH-XE10.3\line\demo notify mtd\Project1.dproj=C:\Users\Developer\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/09/03 12:00:44.000.875,D:\components\WARAPETCH-XE10.3\line\demo notify mtd\LineNotify_Server.dproj=D:\components\WARAPETCH-XE10.3\line\demo notify mtd\Project1.dproj</Transaction>
+    <Transaction>2020/09/12 13:53:54.000.499,=D:\components\WARAPETCH-XE10.3\line\demo notify mtd\Unit1.pas</Transaction>
+    <Transaction>2020/09/12 13:54:47.000.809,D:\components\WARAPETCH-XE10.3\line\demo notify mtd\Unit1.pas=D:\components\WARAPETCH-XE10.3\line\UWrp.Line.NotifyClass.pas</Transaction>
+    <Transaction>2020/09/12 16:33:56.000.185,D:\components\WARAPETCH-XE10.3\line\UWrp.Line.NotifyClass.pas=</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
