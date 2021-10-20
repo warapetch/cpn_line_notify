@@ -1,0 +1,100 @@
+package wrpLineNotify_DX10_3;
+
+{$R *.res}
+{$R 'wrpAPI.dcr'}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'Warapetch Line Notify API'}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  IndyCore,
+  IndySystem,
+  IndyProtocols,
+  dbrtl,
+  soaprtl,
+  inet,
+  vclimg;
+
+contains
+  UWrp.Line.Notify in 'UWrp.Line.Notify.pas',
+  UWrp.Line.Bot in 'UWrp.Line.Bot.pas',
+  UWrpLineBot_S2 in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\UWrpLineBot_S2.pas',
+  UWrpAPI_Common in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\UWrpAPI_Common.pas',
+  UWrpLBot_Build_Flex in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\UWrpLBot_Build_Flex.pas',
+  UWrpLBot_Build_Messages in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\UWrpLBot_Build_Messages.pas',
+  UWrpLBot_Build_Template in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\UWrpLBot_Build_Template.pas',
+  UWrpLineBot_Lib in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\UWrpLineBot_Lib.pas',
+  ULBotClass_Action_Camera in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Action_Camera.pas',
+  ULBotClass_Action_CameraRoll in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Action_CameraRoll.pas',
+  ULBotClass_Action_DateTimePicker in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Action_DateTimePicker.pas',
+  ULBotClass_Action_ImageMap in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Action_ImageMap.pas',
+  ULBotClass_Action_Location in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Action_Location.pas',
+  ULBotClass_Action_Message in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Action_Message.pas',
+  ULBotClass_Action_PostBack in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Action_PostBack.pas',
+  ULBotClass_Action_URI in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Action_URI.pas',
+  ULBotClass_Flex_Block_Style in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Block_Style.pas',
+  ULBotClass_Flex_Box in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Box.pas',
+  ULBotClass_Flex_Bubble in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Bubble.pas',
+  ULBotClass_Flex_Bubble_Style in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Bubble_Style.pas',
+  ULBotClass_Flex_Button in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Button.pas',
+  ULBotClass_Flex_Carousel in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Carousel.pas',
+  ULBotClass_Flex_Filler in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Filler.pas',
+  ULBotClass_Flex_Icon in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Icon.pas',
+  ULBotClass_Flex_Image in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Image.pas',
+  ULBotClass_Flex_Separator in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Separator.pas',
+  ULBotClass_Flex_Span in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Span.pas',
+  ULBotClass_Flex_Text in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Flex_Text.pas',
+  ULBotClass_ImageMap_Action_Area in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_ImageMap_Action_Area.pas',
+  ULBotClass_ImageMap_Action_Message in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_ImageMap_Action_Message.pas',
+  ULBotClass_ImageMap_Action_URI in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_ImageMap_Action_URI.pas',
+  ULBotClass_ImageMap_Video in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_ImageMap_Video.pas',
+  ULBotClass_MessageObj_QuickReply in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_MessageObj_QuickReply.pas',
+  ULBotClass_MessageType_Audio in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_MessageType_Audio.pas',
+  ULBotClass_MessageType_Image in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_MessageType_Image.pas',
+  ULBotClass_MessageType_ImageMap in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_MessageType_ImageMap.pas',
+  ULBotClass_MessageType_Location in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_MessageType_Location.pas',
+  ULBotClass_MessageType_Obj in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_MessageType_Obj.pas',
+  ULBotClass_MessageType_Sticker in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_MessageType_Sticker.pas',
+  ULBotClass_MessageType_Text in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_MessageType_Text.pas',
+  ULBotClass_MessageType_TextEmoji in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_MessageType_TextEmoji.pas',
+  ULBotClass_MessageType_Video in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_MessageType_Video.pas',
+  ULBotClass_Object in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Object.pas',
+  ULBotClass_Spacer in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Spacer.pas',
+  ULBotClass_Template_Button_Base in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Template_Button_Base.pas',
+  ULBotClass_Template_Button_Confirm in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Template_Button_Confirm.pas',
+  ULBotClass_Template_Button_Item in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Template_Button_Item.pas',
+  ULBotClass_Template_Buttons in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Template_Buttons.pas',
+  ULBotClass_Template_Carousel_Column in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Template_Carousel_Column.pas',
+  ULBotClass_Template_Carousel_Column_Item in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Template_Carousel_Column_Item.pas',
+  ULBotClass_Template_Carousel_Image in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Template_Carousel_Image.pas',
+  ULBotClass_Template_Carousel_Image_Obj in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Template_Carousel_Image_Obj.pas',
+  ULBotClass_Template_Carousel_Obj in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Template_Carousel_Obj.pas',
+  ULBotClass_Template_Column_ImageURL in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Template_Column_ImageURL.pas',
+  ULBotClass_Template_Obj in 'E:\project code\@TEST CODE\Line Bot webserver V2.0\BotClass\ULBotClass_Template_Obj.pas';
+
+end.
