@@ -27,38 +27,38 @@ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; pict
 
 
 ## note
-วันนี้ 20/10/2564
+upload 20/10/2564
 
 
 
-#Delphi #SSL  Secure Sockets Layer (SSL) protocols
-.
-📌 ส่ง Line Notify ไม่ผ่าน 
-⛔ Error > 'Could not load SSL library.'
-ใน indy > IdSSLIOHandlerSocketOpenSSL
-กำหนด SSLOptions.Method เป็น sslv23
-** ตรงนี้ ต้องเป็นไปตามที่เซิฟเวอร์ที่เราทำงานด้วยกำหนด
-..
-📌 ไฟล์ OpenSSL 2 ไฟล์นี้เท่านั้น
-** Dynamic **
-.
--- libeay32.dll
--- ssleay32.dll
-.
-ไฟล์ SSL ต้องเป็นของปี 2562+
-..
-📌 คำแนะนำของ เดลไฟ / เดลฟี่
-🔷 https://docwiki.embarcadero.com/RADStudio/Sydney/en/OpenSSL
-..
-📌 ดาวน์ไฟล์ SSL สำหรับเดลไฟ
-🔷 openssl-1.0.2u 21/12/2562
-🔷 https://github.com/IndySockets/OpenSSL-Binaries
-..
-📌 เวบดาวน์โหลด OpenSSL for Windows 
-⛔ https://slproweb.com/products/Win32OpenSSL.html
-..
-⛔ https://www.filehorse.com/download-openssl-32/download/
-..
-ติดตามข่าวสาร OpenSSL
-https://www.openssl.org/
+    #Delphi #SSL  Secure Sockets Layer (SSL) protocols
+    .
+    📌 ส่ง Line Notify ไม่ผ่าน 
+    ⛔ Error > 'Could not load SSL library.'
+    ใน indy > IdSSLIOHandlerSocketOpenSSL
+    กำหนด SSLOptions.Method เป็น sslv23
+    ** ตรงนี้ ต้องเป็นไปตามที่เซิฟเวอร์ที่เราทำงานด้วยกำหนด
+    ..
+    📌 ไฟล์ OpenSSL 2 ไฟล์นี้เท่านั้น
+    ** Dynamic **
+    .
+    -- libeay32.dll
+    -- ssleay32.dll
+    .
+    ไฟล์ SSL ต้องเป็นของปี 2562+
+    ..
+    📌 คำแนะนำของ เดลไฟ / เดลฟี่
+    🔷 https://docwiki.embarcadero.com/RADStudio/Sydney/en/OpenSSL
+    ..
+    📌 ดาวน์ไฟล์ SSL สำหรับเดลไฟ
+    🔷 openssl-1.0.2u 21/12/2562
+    🔷 https://github.com/IndySockets/OpenSSL-Binaries
+    ..
+    📌 เวบดาวน์โหลด OpenSSL for Windows 
+    ⛔ https://slproweb.com/products/Win32OpenSSL.html
+    ..
+    ⛔ https://www.filehorse.com/download-openssl-32/download/
+    ..
+    ติดตามข่าวสาร OpenSSL
+    https://www.openssl.org/
 
